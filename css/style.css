@@ -1,3 +1,5 @@
+
+/*Type and Format*/
 h1 {
     font-family: neue-haas-grotesk-display, sans-serif;
     font-weight: 400;
@@ -11,7 +13,8 @@ h2 {
     font-weight: 400;
     font-size: 10rem;
     line-height: .75;
-    padding-top: 100px
+    /*padding-top: 100px;*/
+    padding-left: 120px;
 }
 
 p {
@@ -22,6 +25,7 @@ p {
     padding-left: 120px;
 }
 
+/*Landing page with overlapping scroll*/
 body {
     flex-direction: column;
 }
@@ -43,9 +47,10 @@ body {
     display: inline-flex;
     align-items: center;
     padding-bottom: 50px;
-    
 }
 
+
+/*Split Essays and Scroll*/
 .first {
     height: 600px;
     overflow: scroll;
@@ -56,6 +61,8 @@ body {
     overflow: scroll;
 }
 
+
+/*Input and Hover Features*/
 .borderless {
     border-style: none;
 }
