@@ -1,9 +1,12 @@
+/*responize font size
+- vw
+*/
 
 /*Type and Format*/
 h1 {
     font-family: neue-haas-grotesk-display, sans-serif;
     font-weight: 400;
-    font-size: 20rem;
+    font-size: 15vw;
     line-height: .75;
     flex-wrap: wrap;
 }
@@ -11,18 +14,20 @@ h1 {
 h2 {
     font-family: neue-haas-grotesk-display, sans-serif;
     font-weight: 400;
-    font-size: 10rem;
+    font-size: 10vw;
     line-height: .75;
+    padding-left: 5vw;
     /*padding-top: 100px;*/
-    padding-left: 120px;
 }
 
 p {
     font-family: neue-haas-grotesk-display, sans-serif;
     width: 700px;
+    font-size: 18px;
     display: inline-block;
     justify-content: space-around;
-    padding-left: 120px;
+    
+
 }
 
 /*Landing page with overlapping scroll*/
@@ -31,14 +36,18 @@ body {
 }
 
 .title {
+    width: 100vw;
     position: fixed;
-    z-index: 1
+    /*z-index: 0;*/
 }
 
 .base {
+    /*padding: 4vw;*/
     position: absolute;
     top: 100%;
-    z-index: 2;
+    height: 100vh;
+    width: 100vw;
+    /*z-index: 1;*/
     background: 100%;
     background-color: white;
 }
@@ -46,28 +55,40 @@ body {
 .body {
     display: inline-flex;
     align-items: center;
-    padding-bottom: 50px;
+    
+    padding: 0 3vw 5vw 5vw;
 }
 
 
 /*Split Essays and Scroll*/
 .first {
-    height: 600px;
+    height: 48vh;
+    width: 45vw;
     overflow: scroll;
 }
 
+.spacer {
+    width: 2vw;
+}
+
 .second {
-    height: 600px;
+    height: 48vh;
+    width: 45vw;
     overflow: scroll;
 }
 
 
 /*Input and Hover Features*/
-.borderless {
-    border-style: none;
+.underline {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
 }
 
 ::-webkit-input-placeholder {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -79,6 +100,12 @@ body {
     width: 300px;
 }
 
-input:hover {
+/*input:hover {
     background-color:#DE5246;
+    
+}*/
+
+#age:hover ~ #twenty{
+    background-color:#DE5246;
+    
 }
