@@ -105,7 +105,7 @@ body {
     
 }*/
 
-#age:hover ~ #twenty{
+#body:hover ~ #twenty{
     background-color:#DE5246;
     
 }
